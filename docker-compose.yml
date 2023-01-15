@@ -10,6 +10,8 @@ services:
       container_name: jenkins
       volumes:
         - /jenkins:/var/jenkins_home
+        - /usr/local/bin/docker:/usr/local/bin/docker
+        - /usr/local/bin/com.docker.cli:/usr/local/bin/com.docker.cli
       networks:
         - jenkins
 networks:
