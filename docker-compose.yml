@@ -12,6 +12,7 @@ services:
         - /jenkins:/var/jenkins_home
         - /var/run/docker.sock:/var/run/docker.sock
         - /usr/bin/docker:/usr/bin/docker
+        - /usr/libexec/docker/cli-plugins:/usr/libexec/docker/cli-plugins
         - /usr/local/bin/com.docker.cli:/usr/local/bin/com.docker.cli
       networks:
         - jenkins
