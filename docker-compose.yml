@@ -18,4 +18,4 @@ services:
         - jenkins
 networks:
   jenkins:
-    name: cluster2
+    name: minikube
